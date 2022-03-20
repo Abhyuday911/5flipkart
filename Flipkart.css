@@ -136,7 +136,7 @@ a {
 .nave3 img {
   margin-top: 5px;
   width: 100%;
-  height: 450px;
+  height: auto;
 }
 #flipkart img:hover,
 .login button:hover,
@@ -144,7 +144,33 @@ a {
 .abc:hover {
   cursor: pointer;
 }
-.fifth img:hover{
+.fifth img:hover {
   height: 75%;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .searchbar {
+    display: none;
+  }
+  .login1,
+  .more1 {
+    display: none;
+  }
+
+  #nav {
+    justify-content: space-between;
+  }
+  .first img,
+  .second img,
+  .third img,
+  .fourth img,
+  .fifth img{
+    width: 50px;
+    height: auto;
+  
+  }
+  .nav2 a{
+    font-size: 11px;
+  }
 }
